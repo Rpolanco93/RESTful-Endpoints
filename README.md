@@ -49,18 +49,32 @@ Remember, HTML web servers should only accept requests with methods of `GET` and
   - `GET /`
   - `GET /home`
 - Submit a contact form
+  - `Post /contact`
 - Access the posts page
+  - `GET /posts`
 - Access the edit page for a post
+  - `GET /post/:postId//edit`
 - Access the create page for a post
+  - `GET /post/new`
 - Create a new user
+  - `POST /user`
 - Log In
+  - `POST /session`
 - Log Out
+  - `POST /session/delete`
 - Access the comments for a post page
+  - `GET /post/:postId/comments`
 - Access the create page for a post's comment
+  - `GET /post/:postId/comments/new`
 - Access the edit page for a comment
+  - `GET /post/:postId/comments/:commentId/edit`
 - Submit a like for a post
+  - `POST /post/:postId/like`
 - Delete a like for a post
+  - `POST /post/:postId/like/delete`
 - Access all the posts of a user
+  - `GET /user/:userId/posts`
 - Submit a search on posts
+  - `GET /posts/:postID/`
 
 [starter]: https://github.com/appacademy/practice-for-week-08-html-web-server-restful-endpoints
